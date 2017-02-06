@@ -1,0 +1,5 @@
+#SampleID	BarcodeSequence	LinkerPrimerSequence	InputFileName	Treatment	Condicao
+EU01			EU01.fna	FEZES_1	HUMAN
+TU02			TU02.fna	FEZES_2	HUMAN
+ELE1			ELE1.fna	FEZES_3	MOUSE
+NOS2			NOS2.fna	FEZES_4	MOUSE
