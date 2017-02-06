@@ -16,6 +16,6 @@ FAZENDO DOWNLOAD DOS ARQUIVOS NO SEU DIRETÓRIO DE ANÁLISE:
 $wget https://github.com/wpomori/cvbioinfo2017/archive/master.zip && unzip master.zip && rm -f master.zip
 
 
-Dando perpissão de execução para os arquivos:
+Dando perMissão de execução para os arquivos:
 chmod 755 cvbioinfo2017-master/qiime2_testes.sh
 chmod 755 cvbioinfo2017-master/uparse.sh
