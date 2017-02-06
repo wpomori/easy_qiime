@@ -1,7 +1,7 @@
 # cvbioinfo2017
 Scripts análises Qiime v.1.0 Omori
 
-                (EM CONSTRUÇÃO. ÚLTIMA ATUALIZAÇÃO 06/02/2017 ÀS 17:45H)
+#                (EM CONSTRUÇÃO. ÚLTIMA ATUALIZAÇÃO 06/02/2017 ÀS 17:45H)
 
 Sintaxe para ajuda: ./qiime2_testes.sh -h OU ./qiime2_testes.sh --help
 
