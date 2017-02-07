@@ -85,3 +85,18 @@ $chmod 755 cvbioinfo2017-master/qiime2_testes.sh
 $chmod 755 cvbioinfo2017-master/uparse.sh
 
 OBS: se preferir, use permissão de superusuário para mover os scripts para o PATH (pode ser em /usr/bin ou /usr/local/bin).
+
+
+# Observações finais sobre os programas usados neste pipeline
+
+    -Perl v.5.18: normalmente já vem instalado por padrão. Porém, caso não esteja instalado, visite: https://www.perl.org/get.html;
+    -Python v.2.7.8: normalmente já vem instalado por padrão. Porém, caso não esteja instalado, visite: https://www.python.org/downloads/;
+    -Usearch v.8.1.1861_i86linux32: http://www.drive5.com/usearch/download.html;
+    -FastQC v.0.11.3: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/;
+    -Prinseq-lite v.0.20.4: https://sourceforge.net/projects/prinseq/;
+    -Cutadapt v.1.11: https://pypi.python.org/pypi/cutadapt;
+    -FASTX Toolkit v.0.0.14: http://hannonlab.cshl.edu/fastx_toolkit/;
+    -Qiime v.1.9.1 (http://qiime.org/install/install.html);
+    -bmp-otuName.pl: https://github.com/vpylro/BMP;
+    -bmp-map2qiime.py: https://github.com/vpylro/BMP.
+
