@@ -80,4 +80,4 @@ Dando permissão de execução para os arquivos executáveis:
 $chmod 755 cvbioinfo2017-master/qiime2_testes.sh
 $chmod 755 cvbioinfo2017-master/uparse.sh
 
-OBS: se quiser, use permisso de superusuário para mover os scripts para o PATH (pode ser em /usr/bin ou /usr/local/bin).
+OBS: se preferir, use permissão de superusuário para mover os scripts para o PATH (pode ser em /usr/bin ou /usr/local/bin).
