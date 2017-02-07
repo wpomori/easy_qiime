@@ -46,7 +46,7 @@ Programas usados neste pipeline:
     
     ./qiime2_testes.sh -h
     
-        OU
+# OU
     
     ./qiime2_testes.sh --help
 
