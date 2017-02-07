@@ -23,7 +23,7 @@ Scripts de análises no Qiime v.1.9.1 construído por Wellington Pine Omori e ap
     
     -Linha 302: nome do arquivo no formato fasta que contém as sequências de adaptadores usados no sequenciamento;
     
-    -Linha 324: caminho absoluto para o arquivo no formato fasta do banco de dados do Ribosomal Database Project (RDP II) (default, pode ser alterado par Greengenes);
+    -Linha 324: caminho absoluto para o arquivo no formato fasta do banco de dados do Ribosomal Database Project (RDP II) (default, pode ser alterado par Greengenes [97_otus.fasta e 97_otu_taxonomy.txt]);
     
     -Linha 325: caminho absoluto para o arquivo de taxonomia das sequências do banco de dados do RDP II (default, pode ser alterado para o Greengenes);
     
