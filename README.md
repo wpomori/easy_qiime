@@ -89,7 +89,7 @@ OBS: se preferir, use permissão de superusuário para mover os scripts para o P
 
 # Observações finais sobre os programas usados neste pipeline
 
-    -Perl v.5.18: normalmente já vem instalado por padrão. Porém, caso não esteja instalado, visite: https://www.perl.org/get.html;
+	-Perl v.5.18: normalmente já vem instalado por padrão. Porém, caso não esteja instalado, visite: https://www.perl.org/get.html;
 	
     -Python v.2.7.8: normalmente já vem instalado por padrão. Porém, caso não esteja instalado, visite: https://www.python.org/downloads/;
 	
