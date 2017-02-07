@@ -20,7 +20,7 @@ Programas usados neste pipeline:
 # Linhas que precisam ser alteradas para funcionamento dos scripts em diferentes computadores
 -qiime2_testes.sh:
 
-    -Linha 294: informar caminho absoluto do diretório que contém o arquivo no formato fasta contendo as sequências dos adaptadores usado durante o sequenciamento;
+    -Linha 294: informar caminho absoluto do diretório que contém o arquivo no formato fasta contendo as sequências dos adaptadores usado durante o sequenciamento
     -Linha 302: nome do arquivo no formato fasta que contém as sequências de adaptadores usados no sequenciamento;
     -Linha 324: caminho absoluto para o arquivo no formato fasta do banco de dados do Ribosomal Database Project (RDP II) (default, pode ser alterado par Greengenes);
     -Linha 325: caminho absoluto para o arquivo de taxonomia das sequências do banco de dados do RDP II (default, pode ser alterado para o Greengenes);
