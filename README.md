@@ -6,13 +6,13 @@ Scripts análises Qiime v.1.0 Omori
 Pipeline de análises no QIIME v.1.9.1 construído em Shell Script.
 Programas usados neste pipeline:
 
-\t-Perl v.5.18
-\t-Python v.2.7.8
-\t-Usearch v.8.1.1861_i86linux32 (pode ser alterado para o 64 bits no script uparse.sh, linha 68)
-\t-FastQC v.0.11.3
-\t-Prinseq-lite v.0.20.4
-\t-Cutadapt v.1.11
-\t-Qiime v.1.9.1
+  -Perl v.5.18
+  -Python v.2.7.8
+  -Usearch v.8.1.1861_i86linux32 (pode ser alterado para o 64 bits no script uparse.sh, linha 68)
+  -FastQC v.0.11.3
+  -Prinseq-lite v.0.20.4
+  -Cutadapt v.1.11
+  -Qiime v.1.9.1
 
 
 
