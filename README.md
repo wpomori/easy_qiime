@@ -56,11 +56,17 @@ Scripts de análises no Qiime v.1.9.1 construído por Wellington Pine Omori e ap
 # ONDE:
 
     -"./" equivale ao diretório corrente/atual onde está o script ./qiime2_testes.sh (caso no esteja no PATH);
+    
     -fastq_raw: caminho absoluto/relativo para o diretório onde se encontram os arquivos no formato fastq que serão trimados e analisados com o script;
+    
     -qiime_analysis_test: caminho absoluto/relativo para o diretório onde serão gerados os resultados processados pelo QIIME;
+    
     -primers.fa: caminho absoluto para o arquivo no formato fasta contendo as sequências dos primers usados na PCR;
+    
     -"-- single": string para informar ao programa que os dados de entrada são single-read. A opção --paired ainda não está devidamente configurada;
+    
     -400: tamanho do amplicons obtidos na PCR (sem adaptadores, primers ou outas estruturas que não o amplicon).
+    
     
 OBS: para executar o pipeline, no diretório corrente/atual deve conter os arquivos primers.fa (nome opcional), map_file.txt e custom_parameters.txt (esses dois devem ser nomeados como estão escritos neta linha). Desde que as linhas dos scripts qiime2_testes.sh e uparse.sh estejam corretamente configuras (Ver "Linhas que precisam ser alteradas para funcionamento dos scripts em diferentes computadores"), basta isto para que o pipeline seja totalmente executado.
 Interrupções inesperados do script estão relacionadas a quantidade de dados muito pequeno em algumas amostras, o que causa discrepâncias nas análises de alfa- e beta-diversidade (principlamente PCoA). Isto ocorre devido a etapa de normalização por profundidade (usando rarefação, segundo nossos testes este método foi mais sensível do que DESeq2 e CSS) entre as amostras considerando a menor amostra.
