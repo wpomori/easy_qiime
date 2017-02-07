@@ -20,25 +20,25 @@ Programas usados neste pipeline:
 # Linhas que precisam ser alteradas para funcionamento dos scripts em diferentes computadores
 -qiime2_testes.sh:
 
-    -Linha 294: informar caminho absoluto do diretório que contém o arquivo no formato fasta contendo as sequências dos adaptadores usado durante o sequenciamento
+    -Linha 294: informar caminho absoluto do diretório que contém o arquivo no formato fasta contendo as sequências dos adaptadores usado durante o sequenciamento;
     
-    -Linha 302: nome do arquivo no formato fasta que contém as sequências de adaptadores usados no sequenciamento
+    -Linha 302: nome do arquivo no formato fasta que contém as sequências de adaptadores usados no sequenciamento;
     
-    -Linha 324: caminho absoluto para o arquivo no formato fasta do banco de dados do Ribosomal Database Project (RDP II) (default, pode ser alterado par Greengenes)
+    -Linha 324: caminho absoluto para o arquivo no formato fasta do banco de dados do Ribosomal Database Project (RDP II) (default, pode ser alterado par Greengenes);
     
-    -Linha 325: caminho absoluto para o arquivo de taxonomia das sequências do banco de dados do RDP II (default, pode ser alterado para o Greengenes)
+    -Linha 325: caminho absoluto para o arquivo de taxonomia das sequências do banco de dados do RDP II (default, pode ser alterado para o Greengenes);
     
-    -Linha 330: caminho absoluto para o banco de dados Silva pré-alinhado (opcional)
+    -Linha 330: caminho absoluto para o banco de dados Silva pré-alinhado (opcional);
     
-    -Linha 331: caminho absoluto para o banco de dados do Greengenes pré-alinhado (default, usado pelo PyNAST durante o alinhamento)
+    -Linha 331: caminho absoluto para o banco de dados do Greengenes pré-alinhado (default, usado pelo PyNAST durante o alinhamento);
     
-    -Linha 521: caso o script uparse.sh não esteja no PATH, informe o caminho absoluto/relativo para este script;
+    -Linha 521: caso o script uparse.sh não esteja no PATH, informe o caminho absoluto/relativo para este script.
     
     
 -uparse.sh:
 
-    -Linha 85: caminho absoluto para o arquivo do banco de dados gold.fa (usado para remoção de quimeras pelo Uchime após execução do protocolo UPARSE);
-    
+    -Linha 85: caminho absoluto para o arquivo do banco de dados gold.fa (usado para remoção de quimeras pelo Uchime após execução do protocolo UPARSE);
+    
     -Linha 88: caminho absoluto para o executável do Usearch (default é a versão 64 bits, pode ser alterado para a versão livre de 32 bits).
     
     
