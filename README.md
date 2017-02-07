@@ -14,6 +14,7 @@ Scripts de análises no Qiime v.1.9.1 construído por Wellington Pine Omori e ap
     -Qiime v.1.9.1
     -bmp-otuName.pl
     -bmp-map2qiime.py
+    -R v.3.3.2
 
 # Linhas que precisam ser alteradas para funcionamento dos scripts em diferentes computadores
 -qiime2_testes.sh:
@@ -108,4 +109,19 @@ OBS: se preferir, use permissão de superusuário para mover os scripts para o P
     -bmp-otuName.pl: https://github.com/vpylro/BMP;
 	
     -bmp-map2qiime.py: https://github.com/vpylro/BMP.
+    
+    INSTALAÇÃO DO PACOTE R
+
+
+# Antes de executar o script todo, será necessário que alguns pacotes do R estejam instalados no sistema. Para isso:
+
+	$sudo R
+
+	>install.packages(c('ape', 'biom', 'optparse', 'RColorBrewer', 'randomForest', 'vegan'))
+
+	>source('http://bioconductor.org/biocLite.R')
+
+	>biocLite(c('DESeq2', 'metagenomeSeq', 'CSS'))
+
+	>q()
 
