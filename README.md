@@ -110,9 +110,8 @@ OBS: se preferir, use permissão de superusuário para mover os scripts para o P
 	
     -bmp-map2qiime.py: https://github.com/vpylro/BMP.
     
-    INSTALAÇÃO DO PACOTE R
 
-
+# INSTALAÇÃO DO PACOTE R
 # Antes de executar o script todo, será necessário que alguns pacotes do R estejam instalados no sistema. Para isso:
 
 	$sudo R
