@@ -76,7 +76,7 @@ Interrupções inesperados do script estão relacionadas a quantidade de dados m
 
 Fazer download dos scripts:
 
-$wget https://github.com/wpomori/cvbioinfo2017/archive/master.zip && unzip master.zip && rm -f master.zip
+    $wget https://github.com/wpomori/cvbioinfo2017/archive/master.zip && unzip master.zip && rm -f master.zip
 
 
 Dando permissão de execução para os arquivos executáveis:
