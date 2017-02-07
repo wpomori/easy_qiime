@@ -1,5 +1,5 @@
 # cvbioinfo2017
-Scripts de análises no Qiime v.1.9.1 construído por Wellington Pine Omori e apresentado como sugestão de pipeline para análises de diversidade de comunidades bacterianas usando o gene 16S ribosomal RNA. Este script foi construído usando Shell Script e tem como objetivo facilitar a introdução de interessados em iniciar análises básicas de bioinformatica que envolvam estudos de microbiomas. Este material faz parte do II Curso de Verão em Bioinformática que foi realizado na Faculdade de Ciências Agrárias e Veterinárias (UNESP-FCAV) de Jaboticabal-SP dutante 30/01/2017 à 10/02/17. Para outras informações: http://www.fcav.unesp.br/#!/cvbioinfo/2017/main/.
+Scripts de análises no Qiime v.1.9.1 construído por Wellington Pine Omori e apresentado como sugestão de pipeline para análises de diversidade de comunidades bacterianas usando o gene 16S ribosomal RNA. Este script foi construído usando Shell Script e tem como objetivo facilitar a introdução de interessados em iniciar análises básicas de bioinformatica que envolvam estudos de microbiomas. Este material faz parte do II Curso de Verão em Bioinformática que foi realizado na Faculdade de Ciências Agrárias e Veterinárias (UNESP-FCAV) de Jaboticabal-SP durante 30/01/2017 à 10/02/17. Para outras informações: http://www.fcav.unesp.br/#!/cvbioinfo/2017/main/.
 
 
 # Programas usados neste pipeline:
