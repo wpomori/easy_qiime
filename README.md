@@ -3,7 +3,7 @@ Scripts análises Qiime v.1.0 Omori
 
 #                (EM CONSTRUÇÃO. ÚLTIMA ATUALIZAÇÃO 06/02/2017 ÀS 17:45H)
 
-Pipeline de análises no QIIME v.1.9.1 construído em Shell Script.
+Pipeline de análises no QIIME v.1.9.1 construído em Shell Script para o gene 16S ribosomal RNA bacteriano.
 Programas usados neste pipeline:
 
     -Perl v.5.18
@@ -12,25 +12,64 @@ Programas usados neste pipeline:
     -FastQC v.0.11.3
     -Prinseq-lite v.0.20.4
     -Cutadapt v.1.11
+    -FASTX Toolkit v.0.0.14 (no script usa-se somente fasta_formatter)
     -Qiime v.1.9.1
+    -bmp-otuName.pl
+    -bmp-map2qiime.py
+
+# Linhas que precisam ser alteradas para funcionamento dos scripts em diferentes computadores
+-qiime2_testes.sh:
+
+    -Linha 294: informar caminho absoluto do diretório que contém o arquivo no formato fasta contendo as sequências dos adaptadores usado durante o sequenciamento;
+    -Linha 302: nome do arquivo no formato fasta que contém as sequências de adaptadores usados no sequenciamento;
+    -Linha 324: caminho absoluto para o arquivo no formato fasta do banco de dados do Ribosomal Database Project (RDP II) (default, pode ser alterado par Greengenes);
+    -Linha 325: caminho absoluto para o arquivo de taxonomia das sequências do banco de dados do RDP II (default, pode ser alterado para o Greengenes);
+    -Linha 330: caminho absoluto para o banco de dados Silva pré-alinhado (opcional);
+    -Linha 331: caminho absoluto para o banco de dados do Greengenes pré-alinhado (default, usado pelo PyNAST durante o alinhamento);
+    -Linha 521: caso o script uparse.sh não esteja no PATH, informe o caminho absoluto/relativo para este script.
+        
+-uparse.sh:
+
+    -Linha 85: caminho absoluto para o arquivo do banco de dados gold.fa (usado para remoção de quimeras pelo Uchime após execução do protocolo UPARSE);
+    -Linha 88: caminho absoluto para o executável do Usearch (default é a versão 64 bits, pode ser alterado para a versão livre de 32 bits).
+    
+    
+# Pedindo ajuda ao programa    
+    
+    ./qiime2_testes.sh -h
+    
+        OU
+    
+    ./qiime2_testes.sh --help
 
 
+# Sintaxe de uso do programa para dados single-read:
+
+    ./qiime2_testes.sh fastq_raw/ qiime_analysis_test primers.fa --single 400
+
+ONDE:
+
+    -"./" equivale ao diretório corrente/atual onde está o script ./qiime2_testes.sh (caso no esteja no PATH);
+    -fastq_raw: caminho absoluto/relativo para o diretório onde se encontram os arquivos no formato fastq que serão trimados e analisados com o script;
+    -qiime_analysis_test: caminho absoluto/relativo para o diretório onde serão gerados os resultados processados pelo QIIME;
+    -primers.fa: caminho absoluto para o arquivo no formato fasta contendo as sequências dos primers usados na PCR;
+    -"-- single": string para informar ao programa que os dados de entrada são single-read. A opção --paired ainda não está devidamente configurada;
+    -400: tamanho do amplicons obtidos na PCR (sem adaptadores, primers ou outas estruturas que não o amplicon).
+    
+OBS: para executar o pipeline, no diretório corrente/atual deve conter os arquivos primers.fa (nome opcional), map_file.txt e custom_parameters.txt (esses dois devem ser nomeados como estão escritos neta linha). Desde que as linhas dos scripts qiime2_testes.sh e uparse.sh estejam corretamente configuras (Ver "Linhas que precisam ser alteradas para funcionamento dos scripts em diferentes computadores"), basta isto para que o pipeline seja totalmente executado.
+Interrupções inesperados do script estão relacionadas a quantidade de dados muito pequeno em algumas amostras, o que causa discrepâncias nas análises de alfa- e beta-diversidade (principlamente PCoA). Isto ocorre devido a etapa de normalização por profundidade (usando rarefação, segundo nossos testes este método foi mais sensível do que DESeq2 e CSS) entre as amostras considerando a menor amostra.
 
 
+# Configurando o computador para execução do pipeline
 
-Sintaxe para ajuda: ./qiime2_testes.sh -h OU ./qiime2_testes.sh --help
-
-Sintaxe uso com dados single-read: ./qiime2_testes.sh fastq_raw/ qiime_analysis_test primers.fa --single 400
-
-
-ONDE: "./" equivale a diretório corrente/atual onde está o script ./qiime2_testes.sh
-
-
-FAZENDO DOWNLOAD DOS ARQUIVOS NO SEU DIRETÓRIO DE ANÁLISE:
+Fazer download dos scripts:
 
 $wget https://github.com/wpomori/cvbioinfo2017/archive/master.zip && unzip master.zip && rm -f master.zip
 
 
-Dando perMissão de execução para os arquivos:
-chmod 755 cvbioinfo2017-master/qiime2_testes.sh
-chmod 755 cvbioinfo2017-master/uparse.sh
+Dando permissão de execução para os arquivos executáveis:
+
+$chmod 755 cvbioinfo2017-master/qiime2_testes.sh
+$chmod 755 cvbioinfo2017-master/uparse.sh
+
+OBS: se quiser, use permisso de superusuário para mover os scripts para o PATH (pode ser em /usr/bin ou /usr/local/bin).
